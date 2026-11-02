@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>display</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    div {
+      margin: 20px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    img {
+      width: 300px;
+    }
+
+    #inline img:nth-child(2) /* 두번째 이미지 부르기 */{
+      visibility: hidden;
+    }
+
+    #block img {
+      display: block;
+    }
+
+    #block img:nth-child(2) {
+      display: none;
+    }
+    ul{
+      width: 500px;
+      margin: 0 auto;
+      background: #ccc;
+    }
+    li{
+      background: khaki;
+      width: 100px;
+      display: inline;/* 인라인으로 바꾸기!! */
+      display: inline-block; /* 인라인블록은 배치는 인라인, 속성은 블록속성을 지님 */
+    }
+    a{/* a는 인라인@@@ */
+      color: inherit; /* 부모로부터 상속받기 리셋시킬때 많이쓰는 코드 */
+      text-decoration: none; /* a링크 밑줄 없애기 */
+      background: lightcoral;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="inline">
+    <img src="https://7lgigmttrjuyfehsudec15072.edge.naverncp.com/news/photo/202602/799402_1300535_3730.jpg" alt="카리나">
+    <img src="https://7lgigmttrjuyfehsudec15072.edge.naverncp.com/news/photo/202602/799402_1300535_3730.jpg" alt="카리나">
+    <img src="https://7lgigmttrjuyfehsudec15072.edge.naverncp.com/news/photo/202602/799402_1300535_3730.jpg" alt="카리나">
+  </div>
+  <div id="block">
+    <img src="https://7lgigmttrjuyfehsudec15072.edge.naverncp.com/news/photo/202602/799402_1300535_3730.jpg" alt="카리나">
+    <img src="https://7lgigmttrjuyfehsudec15072.edge.naverncp.com/news/photo/202602/799402_1300535_3730.jpg" alt="카리나">
+    <img src="https://7lgigmttrjuyfehsudec15072.edge.naverncp.com/news/photo/202602/799402_1300535_3730.jpg" alt="카리나">
+  </div>
+  <nav>
+<ul>
+  <li><a href="">메뉴1</a></li> <!-- 기본값 : a는 inline li는 block이기때문에 밑으로 떨어짐 -->
+<li><a href="">메뉴2</a></li>
+<li><a href="">메뉴3</a></li>
+<li><a href="">메뉴4</a></li>
+</ul>
+  </nav>
+</body>
+
+</html>
