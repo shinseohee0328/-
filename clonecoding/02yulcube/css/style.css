@@ -319,7 +319,29 @@ body {
   font-size: 18px;
 }
 
-#circle article.face_2 {
+.direction_layout{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.direction_layout>div{
+  width: 100%;
+  min-height: 0;
+  padding: 36px;
+}
+.direction_visual{
+  flex:1;
+}
+
+.direction_visual img{
+  width: 100px; height: 100%;
+  object-fit: cover;
+  border: 1px solid rgba(157, 255, 236, 0.22);
+}
+.direction_copy{
+  flex:0.8;
+}
+#circle article.face_4 {
   display: block;
 }
 
