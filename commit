@@ -1,0 +1,17 @@
+깃 설치 후 터미널 세팅
+git config user.name "shinseohee0328"
+git config user.email "shinseohee0328@gmail.com"
+git config --list
+
+pull(내려받기)
+
+git status
+git remote -v
+git pull origin main
+
+push(커밋)
+
+git status
+git add .
+git commit -m "작업 내용"
+git push origin main
