@@ -36,18 +36,18 @@
     // console.log(uiuxClass[random[0]]);
     for (let i = 0; i < len; i++) {
       random[i] = Math.floor(Math.random() * len);
-      for(let j=0; j<i; j++){
-        if(random[i] == random[j]){
+      for (let j = 0; j < i; j++) {
+        if (random[i] == random[j]) {
           i--;
           break
         }
       }
     }
     // console.log(random);
-    function docu(){
-      for(let i=0; i < len; i++){
-        alert(`(${i+1}) ${uiuxClass[random[i]]}`);
-        document.write(`(${i+1}) ${uiuxClass[random[i]]}<br>`);
+    function docu() {
+      for (let i = 0; i < len; i++) {
+        alert(`(${i + 1}) ${uiuxClass[random[i]]}`);
+        document.write(`(${i + 1}) ${uiuxClass[random[i]]}<br>`);
       }
     }
   </script>
