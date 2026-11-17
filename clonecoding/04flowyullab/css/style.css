@@ -878,6 +878,30 @@ opacity: .2;
 .learning ul li:hover::after{
   display: none;
 }
+.con{
+  padding: 120px 0 0;
+  background: var(--gray-01);
+}
+.con .inner{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 56px;
+  margin-bottom: 42px;
+
+}
+.con .tit_eng{
+  margin-bottom: 0;
+}
+.con .inner a.more{
+  width: 160px;
+  height: 56px;
+  border: 1px solid var(--gray-02);
+  transition: .2s;
+}
+.con .inner a.more:hover{
+  border-color: var(--gray-03);
+}
 footer {
   height: 400px;
   background: #32E0BD;
