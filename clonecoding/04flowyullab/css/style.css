@@ -86,12 +86,10 @@ body.no-scroll{
 }
 body.no-scroll{
   position: fixed;
-  left: 0;
-  right: 0;
+  left: 0; right: 0;
   width: 100%;
   touch-action: none;
 }
-
 .inner {
   width: clamp(1600px, 80vw, 90%);
   margin-inline: auto;
@@ -261,7 +259,7 @@ header.on .ham_menu {
 }
 
 header .container {
-  width: min(1280px, calc(100% - 40px));
+  width: min(1280px,calc(100% - 40px));
   margin: 0 auto;
 }
 
@@ -700,7 +698,7 @@ main .more.border:hover {
 }
 
 .article_bottom .box5:hover img {
-  right: 20px;
+  right: 40px;
   transform: translateY(0);
 }
 
@@ -750,7 +748,7 @@ main .more.border:hover {
   width: 1100px;
   height: 1100px;
   border-radius: 50%;
-  background: radial-gradient(50% 50% at 50% 50%, var(--yul-brand-orange-soft, #FFD0A3) 0%, var(--yul-brand-yellow, #F6C84F) 65.87%, var(--yul-brand-orange-deep, #C8671E) 100%);
+  background: radial-gradient(50% 50% at 50% 50%, #FEC893 0%, #EB7923 100%);
   right: 0;
   top: 65%;
   animation: rotateCircle 7s infinite linear;
@@ -762,14 +760,13 @@ main .more.border:hover {
   width: 80%;
   height: 80%;
   border-radius: 50%;
-  background: radial-gradient(50% 50% at 50% 50%, var(--yul-brand-orange-soft, #FFD0A3) 0%, var(--yul-brand-yellow, #F6C84F) 65.87%, var(--yul-brand-orange-deep, #C8671E) 100%);
+  background: radial-gradient(50% 50% at 50% 50%, #FEC893 0%, #EB7923 100%);
   left: 50%;
   top: 50%;
   margin-left: -40%;
   margin-top: -40%;
   animation: rotateCircle 7s infinite linear;
   transform-origin: 45% 50%;
-
 }
 
 .motion .circle_box .circle2 {
@@ -777,14 +774,13 @@ main .more.border:hover {
   width: 50%;
   height: 50%;
   border-radius: 50%;
-  background: radial-gradient(50% 50% at 50% 50%, var(--yul-brand-orange-soft, #FFD0A3) 0%, var(--yul-brand-yellow, #F6C84F) 65.87%, var(--yul-brand-orange-deep, #C8671E) 100%);
+  background: radial-gradient(50% 50% at 50% 50%, #FEC893 0%, #EB7923 100%);
   left: 50%;
   top: 50%;
   margin-left: -25%;
   margin-top: -25%;
   animation: rotateCircle 7s infinite linear;
   transform-origin: 35% 50%;
-
 }
 
 @keyframes rotateCircle {
@@ -814,7 +810,6 @@ main .more.border:hover {
   height: 700px;
   display: flex;
   gap: 20px;
-
 }
 
 .learning ul li {
@@ -869,7 +864,6 @@ main .more.border:hover {
 
 .learning ul li:hover .txt {
   display: block;
-
 }
 
 .learning ul li .txt em {
@@ -923,7 +917,6 @@ main .more.border:hover {
   align-items: center;
   height: 56px;
   margin-bottom: 42px;
-
 }
 
 .con .tit_eng {
@@ -1046,14 +1039,13 @@ main .more.border:hover {
 }
 
 .curriculum {
-  padding-top: 64px;
+  padding: 64px;
   background-color: var(--gray-01);
-
 }
 
 .curriculum .inner {
-  height: 256px;
-  background: var(--yul-brand-paper-soft);
+  height: 265px;
+  background-color: var(--yul-brand-paper-soft);
   border-radius: var(--round);
   box-shadow: var(--yul-brand-shadow);
 }
@@ -1089,7 +1081,6 @@ main .more.border:hover {
 .curriculum .list_box {
   width: 410px;
   height: 100%;
-  /* list-style: none; */
 }
 
 .curriculum .badge_list {
@@ -1115,7 +1106,7 @@ main .more.border:hover {
 }
 
 .contact {
-  padding: 64px 0;
+  padding-bottom: 64px;
   background-color: var(--gray-01);
 }
 
@@ -1130,7 +1121,7 @@ main .more.border:hover {
   background: var(--gray-00);
   border-radius: var(--round);
   flex: 1;
-  box-shadow: var(--yul-brand-shadow);
+  box-shadow: var(--yul-brand-shadow2);
   transition: background-color .4s;
 }
 
@@ -1155,12 +1146,10 @@ main .more.border:hover {
 
 .contact .inner article:nth-child(2) a {
   background-image: url(../img/yul-contact-02.png);
-
 }
 
 .contact .inner article:nth-child(3) a {
   background-image: url(../img/yul-contact-03.png);
-
 }
 
 .contact .inner article:nth-child(4) a {
@@ -1261,22 +1250,18 @@ footer .f_top button:hover {
   align-items: center;
   border-radius: 16px;
 }
-
-.select_box {
+.select_box{
   width: 240px;
   height: 100%;
   position: relative;
   overflow: hidden;
 }
-
-.select_box.on {
+.select_box.on{
   overflow: visible;
 }
-
-.select_box button {
-  border: none;
-  width: 100%;
-  height: 100%;
+.select_box button{
+  border:0;
+  width: 100%; height: 100%;
   padding: 0 1.1rem;
   display: flex;
   justify-content: space-between;
@@ -1288,13 +1273,11 @@ footer .f_top button:hover {
   border-radius: 16px;
   overflow: hidden;
 }
-
-.select_box.on button img {
+.select_box.on button img{
   display: block;
   transform: rotate(180deg);
 }
-
-.select_box ul {
+.select_box ul{
   position: absolute;
   left: 0;
   bottom: -226px;
@@ -1305,32 +1288,27 @@ footer .f_top button:hover {
   flex-direction: column;
   color: #7a7a7a;
   opacity: 0;
-}
-
-.select_box.on ul {
-  bottom: 60px;
-  opacity: 1;
   transition: .1s;
 }
-
-.select_box ul li {
+.select_box.on ul{
+  bottom: 60px;
+  opacity: 1;
+}
+.select_box ul li{
   flex: 1;
 }
-
-.select_box ul li:nth-child(2) {
+.select_box ul li:nth-child(2){
   border-top: 1px solid #2a2a2a;
   border-bottom: 1px solid #2a2a2a;
 }
-
-.select_box ul li a {
+.select_box ul li a{
   display: flex;
   width: 100%;
   height: 100%;
   justify-content: center;
   align-items: center;
 }
-
-.top a {
+.top a{
   width: 100px;
   height: 100%;
   display: flex;
@@ -1339,7 +1317,6 @@ footer .f_top button:hover {
   border-radius: 16px;
   padding: 0 20px;
 }
-
 footer .f_bottom {
   margin-top: 80px;
   display: flex;
@@ -1353,7 +1330,6 @@ footer .f_bottom {
 footer .f_bottom strong,
 footer .f_bottom .f_con1 a{
   font-weight: 700;
-
 }
 footer .f_bottom .f_con1 span{
   display: inline-flex;
@@ -1362,11 +1338,9 @@ footer .f_bottom .f_con1 span{
   align-items: center;
   border-right: 1px solid var(--gray-07);
 }
-
 footer .f_bottom .f_con1 a{
   padding-left: .8em;
 }
-
 footer .f_bottom .copy{
   text-align: right;
 }

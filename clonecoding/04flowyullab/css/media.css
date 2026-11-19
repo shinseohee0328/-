@@ -28,8 +28,6 @@
     border-radius: 16px;
   }
 
-
-
   .contact .inner article a {
     display: flex;
     flex-direction: column;
@@ -76,7 +74,7 @@
   }
 
   :root {
-    --round: 16px;
+    --ronud: 16px;
   }
 
   header .inner {
@@ -110,12 +108,15 @@
     border: 0;
   }
 
+  header .container .all_con ul.list>li:last-child {
+    border: 0;
+  }
+
   header .container .all_con ul.list>li button {
     font-size: 22px;
     width: 100%;
     border-bottom: 1px solid var(--gray-06);
     line-height: 3.3;
-    display: flex;
     justify-content: space-between;
     padding-inline: 20px;
   }
@@ -137,10 +138,6 @@
 
   header .container .all_con ul.list>li:hover button::before {
     width: auto;
-  }
-
-  header .container .all_con ul.list>li:last-child {
-    border: 0;
   }
 
   header .container .all_con ul.list>li ul {
@@ -173,7 +170,6 @@
 
   .article_bottom .box em {
     font-size: 16px;
-    font-weight: 600;
   }
 
   .article_bottom .box p {
@@ -182,7 +178,7 @@
   }
 
   .article_bottom .box .txt_b {
-    left: 36px;
+    left: 36px
   }
 
   .article_bottom .box:hover .txt_b {
@@ -195,7 +191,6 @@
 
   .article_bottom .box .txt_b span {
     font-size: 12px;
-
   }
 
   .article_bottom .box1 {
@@ -241,45 +236,168 @@
 
   .article_bottom .box5 img {
     right: 40px;
-    width: 150px;
     transform: translateY(0);
+    width: 150px;
   }
-  .motion{display: none;}
+
+  .motion {
+    display: none;
+  }
+
   .tit_eng {
-  margin-bottom: 24px;
-  font-size: 28px;
-  font-weight: 600;
-}
-.learning{
-  padding: 0 0 56px;
-}
-.learning ul{
-  display: block;
-  height: auto;
-  
-}
-.learning ul li{
-  height: 120px;
-  margin-bottom: 20px;
-}
+    font-size: 28px;
+    margin-bottom: 24px;
+  }
 
-.learning ul li:hover img {
-  opacity: 1;
-}
-.learning ul li h3 {
-  transform: rotate(0) translateY(0);
-}
-.learning ul li .txt a,
-.learning ul li::after, .learning ul li:hover .txt{
-  display: none;
-}
-.con{
-  padding: 54px 0;
-}
-.con .inner{
-  padding-inline: 20px;
-  height: 32px;
-  margin-bottom: 20px;
-}
+  .learning {
+    padding: 0 0 56px;
+  }
 
+  .learning ul {
+    display: block;
+    height: auto;
+  }
+
+  .learning ul li {
+    height: 110px;
+    margin-bottom: 20px;
+  }
+
+  .learning ul li:hover img {
+    opacity: 1;
+  }
+
+  .learning ul li h3 {
+    transform: rotate(0) translateY(0);
+  }
+
+  .learning ul li .txt a,
+  .learning ul li::after,
+  .learning ul li:hover .txt {
+    display: none;
+  }
+
+  .con {
+    padding: 0;
+  }
+
+  .con .inner {
+    padding-inline: 20px;
+    height: 32px;
+    margin-bottom: 20px;
+  }
+
+  .con .inner a.more {
+    width: 40px;
+    height: 40px;
+    padding: 0;
+    justify-content: center;
+    font-size: 0.8rem;
+  }
+
+  .con .inner a.more em {
+    display: none;
+  }
+
+  .contents {
+    padding-top: 60px;
+  }
+
+  .contents .swiper {
+    height: 380px;
+    padding-bottom: 50px;
+  }
+
+  .contents .swiper .box {
+    width: 320px;
+  }
+
+  .contents .swiper .box .txt_box em {
+    font-size: 14px;
+  }
+
+  .contents .swiper .box .txt_box p {
+    font-size: 18px;
+    margin-bottom: 30px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .contents .swiper .box .txt_box span {
+    font-size: 13px;
+  }
+
+  .blog .swiper {
+    height: 360px;
+    padding-bottom: 50px;
+  }
+
+  .blog .swiper .box {
+    width: 320px;
+  }
+
+  .blog .swiper .box .img_box {
+    height: 184px;
+    flex-shrink: 0;
+  }
+
+  .blog .swiper .box .txt_box {
+    padding: 24px;
+  }
+
+  .blog .swiper .box .txt_box em {
+    font-size: 14px;
+  }
+
+  .blog .swiper .box .txt_box p {
+    font-size: 18px;
+    margin-bottom: 20px;
+    font-weight: 600;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+
+  .blog .swiper .box .txt_box span {
+    font-size: 13px;
+  }
+
+  .curriculum {
+    padding-inline: 20px;
+    padding-top: 30px;
+  }
+
+  .curriculum .inner {
+    position: relative;
+  }
+
+  .curriculum .inner a .txt_box {
+    width: 70%;
+  }
+
+  .curriculum span {
+    font-size: 12px;
+  }
+
+  .curriculum .list_box {
+    width: 300px;
+  }
+
+  .contact .inner {
+    height: auto;
+    flex-direction: column;
+    padding-inline: 20px;
+
+  }
+
+  .contact .inner article {
+    padding: 32px;
+    flex-basis: 124px;
+  }
+  .contact .inner article a {
+  background-size: 54px;
+}
+.contact .inner article a h3{font-size: 16px;}
+.contact .inner article a p{font-size: 12px;}
 }
