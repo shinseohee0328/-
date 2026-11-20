@@ -6,6 +6,19 @@ document.getElementById('ham_menu').addEventListener('click', function () {
   document.querySelector('html,body').classList.toggle('no-scroll')
 });
 
+document.querySelectorAll('header .container .all_con ul.list>li').forEach(function(li) {
+  const button = li.querySelector('button');
+
+  //버튼이 없는 항목은 건너뜁니다
+  if (!button) return;
+
+  button.addEventListener('click', function () {
+    //css의 미디어쿼리와 동일하게 1160px 이하에서만 실행
+    if (!window.matchMedia('(max-width:1160px)').matches) return;
+    li.classList.toggle('on');
+  });
+})
+
 let scrollLockY = 0;
 
 const setScrollLocked = (isLocked) => {
@@ -195,7 +208,7 @@ const updateResponsiveSlides = () => {
 let resizeTimer;
 window.addEventListener('resize', () => {
   clearTimeout(resizeTimer);
-  resizeTimer = setTimeout(updateResponsiveSlides,120);
+  resizeTimer = setTimeout(updateResponsiveSlides, 120);
 });
 
 
